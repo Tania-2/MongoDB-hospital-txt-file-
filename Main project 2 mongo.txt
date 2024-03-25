@@ -1,0 +1,2688 @@
+ use hospital1
+switched to db hospital1
+> show collections
+appoinments
+department
+doctor
+insuranceplans
+lab
+medicalrecords
+medications
+nurse
+patient
+surgeries
+> db.appoinments.find().pretty()
+{
+        "_id" : ObjectId("65fbda1960913db36c5ab3d0"),
+        "name" : "Vishnu",
+        "doctor_name" : "Colin",
+        "appoinment_date" : "12-01-2024",
+        "appoinment_time" : "10:00 am",
+        "department" : "General_medicine",
+        "status" : "confirmed",
+        "contact_number" : 8976453212,
+        "email" : "vishnu2@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbda7d60913db36c5ab3d1"),
+        "name" : "Vandhana",
+        "doctor_name" : "Colin",
+        "appoinment_date" : "22-01-2024",
+        "appoinment_time" : "11:00 am",
+        "department" : "General_medicine",
+        "status" : "confirmed",
+        "contact_number" : 9867549823,
+        "email" : "vandhana3@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdad560913db36c5ab3d2"),
+        "name" : "Shilpa",
+        "doctor_name" : "Anju_Mary_Mathews",
+        "appoinment_date" : "12-02-2024",
+        "appoinment_time" : "11:15 am",
+        "department" : "Paediatrics",
+        "status" : "confirmed",
+        "contact_number" : 9899776545,
+        "email" : "shilpa3@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdb0360913db36c5ab3d3"),
+        "name" : "Devuja",
+        "doctor_name" : "Anju_Mary_Mathews",
+        "appoinment_date" : "13-02-2024",
+        "appoinment_time" : "11:25 am",
+        "department" : "Paediatrics",
+        "status" : "confirmed",
+        "contact_number" : 9985674432,
+        "email" : "devuja2@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdb4260913db36c5ab3d4"),
+        "name" : "Anvar",
+        "doctor_name" : "Colin",
+        "appoinment_date" : "23-02-2024",
+        "appoinment_time" : "11:25 am",
+        "department" : "General_Medicine",
+        "status" : "confirmed",
+        "contact_number" : 7877654534,
+        "email" : "anvar5@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdb7960913db36c5ab3d5"),
+        "name" : "Tania",
+        "doctor_name" : "Colin",
+        "appoinment_date" : "24-02-2024",
+        "appoinment_time" : "11:45 am",
+        "department" : "General_Medicine",
+        "status" : "confirmed",
+        "contact_number" : 8977654567,
+        "email" : "tania8@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdd7822d7b37ad212ec08"),
+        "name" : "Rahul",
+        "doctor_name" : "Colin",
+        "appoinment_date" : "23-02-2024",
+        "appoinment_time" : "11:45 am",
+        "department" : "General_Medicine",
+        "status" : "confirmed",
+        "contact_number" : 7787675543,
+        "email" : "rahul3@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbde6b3a206cb587a6c1a9"),
+        "name" : "Rona",
+        "doctor_name" : "Sunena_Azeem",
+        "appoinment_date" : "25-02-2024",
+        "appoinment_time" : "11:45 am",
+        "department" : "Dermatology",
+        "status" : "confirmed",
+        "contact_number" : 8897675436,
+        "email" : "rona2@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbde8b3a206cb587a6c1aa"),
+        "name" : "Reena",
+        "doctor_name" : "Sunena_Azeem",
+        "appoinment_date" : "27-02-2024",
+        "appoinment_time" : "11:25 am",
+        "department" : "Dermatology",
+        "status" : "confirmed",
+        "contact_number" : 6758904432,
+        "email" : "reena7@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdec03a206cb587a6c1ab"),
+        "name" : "Sheena",
+        "doctor_name" : "Anbalagan",
+        "appoinment_date" : "27-02-2024",
+        "appoinment_time" : "11:25 am",
+        "department" : "ENT",
+        "status" : "confirmed",
+        "contact_number" : 6678543299,
+        "email" : "sheena7@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdef93a206cb587a6c1ac"),
+        "name" : "Sheethal",
+        "doctor_name" : "Anbalagan",
+        "appoinment_date" : "28-02-2024",
+        "appoinment_time" : "12:25 am",
+        "department" : "ENT",
+        "status" : "confirmed",
+        "contact_number" : 7888657433,
+        "email" : "sheethal7@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdf3a3a206cb587a6c1ad"),
+        "name" : "Susy",
+        "doctor_name" : "Priya_Joy",
+        "appoinment_date" : "28-02-2024",
+        "appoinment_time" : "12:25 am",
+        "department" : "Pulmonology",
+        "status" : "confirmed",
+        "contact_number" : 7877656799,
+        "email" : "susy6@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdf593a206cb587a6c1ae"),
+        "name" : "Dustin",
+        "doctor_name" : "Priya_Joy",
+        "appoinment_date" : "28-02-2024",
+        "appoinment_time" : "12:25 am",
+        "department" : "Pulmonology",
+        "status" : "confirmed",
+        "contact_number" : 7786905544,
+        "email" : "dustin6@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdf763a206cb587a6c1af"),
+        "name" : "Soman",
+        "doctor_name" : "Priya_Joy",
+        "appoinment_date" : "28-02-2024",
+        "appoinment_time" : "12:40 am",
+        "department" : "Pulmonology",
+        "status" : "confirmed",
+        "contact_number" : 8876665456,
+        "email" : "soman9@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdf913a206cb587a6c1b0"),
+        "name" : "Jane",
+        "doctor_name" : "Priya_Joy",
+        "appoinment_date" : "28-02-2024",
+        "appoinment_time" : "12:40 am",
+        "department" : "Pulmonology",
+        "status" : "confirmed",
+        "contact_number" : 7766898954,
+        "email" : "jane1@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdfd23a206cb587a6c1b1"),
+        "name" : "Sunny",
+        "doctor_name" : "Aashique",
+        "appoinment_date" : "29-02-2024",
+        "appoinment_time" : "12:45 am",
+        "department" : "Anaesthesiology & Critical Care",
+        "status" : "confirmed",
+        "contact_number" : 6678776545,
+        "email" : "sunny5@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbdff53a206cb587a6c1b2"),
+        "name" : "Nisha",
+        "doctor_name" : "Aashique",
+        "appoinment_date" : "29-02-2024",
+        "appoinment_time" : "12:45 am",
+        "department" : "Anaesthesiology & Critical Care",
+        "status" : "confirmed",
+        "contact_number" : 9989076556,
+        "email" : "nisha2@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbe0933a206cb587a6c1b3"),
+        "name" : "Laura",
+        "doctor_name" : "Jineesh_Joseph",
+        "appoinment_date" : "22-01-2024",
+        "appoinment_time" : "01:45 am",
+        "department" : "Respiratory_Medicine",
+        "status" : "confirmed",
+        "contact_number" : 8799675432,
+        "email" : "laura4@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbe0c03a206cb587a6c1b4"),
+        "name" : "Susan",
+        "doctor_name" : "Jineesh_Joseph",
+        "appoinment_date" : "22-01-2024",
+        "appoinment_time" : "01:55 am",
+        "department" : "Respiratory_Medicine",
+        "status" : "confirmed",
+        "contact_number" : 7877987654,
+        "email" : "susan4@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+{
+        "_id" : ObjectId("65fbe1213a206cb587a6c1b5"),
+        "name" : "Anzar",
+        "doctor_name" : "Jineesh_Joseph",
+        "appoinment_date" : "02-01-2024",
+        "appoinment_time" : "02:55 am",
+        "department" : "Respiratory_Medicine",
+        "status" : "confirmed",
+        "contact_number" : 9988765423,
+        "email" : "anzar5@gmail.com",
+        "remarks" : "follow-up-visit",
+        "place" : "Tvm"
+}
+> db.department.find().pretty()
+{
+        "_id" : ObjectId("65f971e498d125b21d13041c"),
+        "name" : "Internal_Medicine",
+        "head_of_department" : "Bindhu_Rajagopal",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_1,Block_1",
+        "phone" : 6234568767,
+        "email" : "internalmedicine@gmail.com",
+        "website" : "www.internalmedicine.com",
+        "description" : "solve diagnostic problems, manage severe long-term illnesses, and help patients with multiple, complex chronic conditions.",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f9733898d125b21d13041d"),
+        "name" : "Bariatric & Venous",
+        "head_of_department" : "Anu_Antony_Varghese",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 4,
+        "location" : " Room_2,Block_1",
+        "phone" : 6234568756,
+        "email" : "bariatricandvenous@gmail.com",
+        "website" : "www.bariatricandvenous.com",
+        "description" : "relating to or specializing in the treatment of obesity : involving or practicing bariatrics and treatments related to veins",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f9755698d125b21d13041f"),
+        "name" : "Nephrology",
+        "head_of_department" : "Hanock_Unni_Samuel",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_3,Block_1",
+        "phone" : 6234568723,
+        "email" : "nephrology@gmail.com",
+        "website" : "www.nephrology.com",
+        "description" : "a specialty within the internal medicine field related to kidney care",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f9765398d125b21d130420"),
+        "name" : "Gynecology",
+        "head_of_department" : "Marykuty",
+        "number_of_doctors" : 2,
+        "number_of_nurses" : 10,
+        "location" : " Room_5,Block_1",
+        "phone" : 6234568789,
+        "email" : "gynecology@gmail.com",
+        "website" : "www.gynecology.com",
+        "description" : " diagnoses and treats issues with female reproductive organs",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f9772798d125b21d130421"),
+        "name" : "Dental",
+        "head_of_department" : "Leji_Aprem",
+        "number_of_doctors" : 2,
+        "number_of_nurses" : 5,
+        "location" : " Room_7,Block_2",
+        "phone" : 6234568763,
+        "email" : "dental@gmail.com",
+        "website" : "www.dental.com",
+        "description" : "branch of medicine focused on the teeth, gums, and mouth",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f977fe98d125b21d130422"),
+        "name" : "Neurology",
+        "head_of_department" : "Prem_Krishnan",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_10,Block_2",
+        "phone" : 6234568729,
+        "email" : "neurology@gmail.com",
+        "website" : "www.neurology.com",
+        "description" : "the branch of medicine concerned with the study and treatment of disorders of the nervous system.",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f978d398d125b21d130423"),
+        "name" : "Gastroenterology",
+        "head_of_department" : "Janet_Indu_Lily",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_11,Block_3",
+        "phone" : 6234568749,
+        "email" : "gastroenterology@gmail.com",
+        "website" : "www.gastroenterology.com",
+        "description" : " diagnose, treat and work to prevent gastrointestinal (stomach and intestines) and hepatological (liver, gallbladder, biliary tree and pancreas) diseases",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f979a798d125b21d130424"),
+        "name" : "Respiratory_Medicine",
+        "head_of_department" : "Jineesh_Joseph",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_12,Block_3",
+        "phone" : 6234568757,
+        "email" : "respiratorymedicine@gmail.com",
+        "website" : "www.respiratorymedicine.com",
+        "description" : "diagnose and treat conditions affecting the respiratory system, which includes the nose, throat, larynx, windpipe, lungs and the diaphragm",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f97adf98d125b21d130425"),
+        "name" : "Anaesthesiology",
+        "head_of_department" : "Thomas_K_John",
+        "number_of_doctors" : 4,
+        "number_of_nurses" : 8,
+        "location" : " Room_13,Block_3",
+        "phone" : 6234568707,
+        "email" : "anaesthesiology@gmail.com",
+        "website" : "www.anaesthesiology.com",
+        "description" : "the medical specialty concerned with the total perioperative care of patients before, during and after surgery",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f97b7b98d125b21d130426"),
+        "name" : "Pulmonology",
+        "head_of_department" : "Priya_Joy",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 4,
+        "location" : " Room_17,Block_4",
+        "phone" : 6234568706,
+        "email" : "pulmonology@gmail.com",
+        "website" : "www.pulmonology.com",
+        "description" : " managing patients who need life support and mechanical ventilation",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f97d5698d125b21d130427"),
+        "name" : "ENT",
+        "head_of_department" : "Anbalagan",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_18,Block_4",
+        "phone" : 6234568766,
+        "email" : "ent@gmail.com",
+        "website" : "www.ent.com",
+        "description" : "comprehensive care for all disorders related to the ear, nose, and throat",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f97dce98d125b21d130428"),
+        "name" : "Dermatology",
+        "head_of_department" : "Sunena_Azeem",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 3,
+        "location" : " Room_19,Block_4",
+        "phone" : 6234568777,
+        "email" : "dermatology@gmail.com",
+        "website" : "www.dermatology.com",
+        "description" : " handles patients with various forms of skin and venereal diseases and performs a variety of cosmetic procedures through the assistance of highly qualified experts",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f97e5098d125b21d130429"),
+        "name" : "Paediatrics",
+        "head_of_department" : "Anju_Mary_Mathews",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_20,Block_4",
+        "phone" : 6234568666,
+        "email" : "paediatrics@gmail.com",
+        "website" : "www.paediatrics.com",
+        "description" : "provide comprehensive health care service for children and adolescents below the age of 15",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f97f4598d125b21d13042a"),
+        "name" : "Critical_Care",
+        "head_of_department" : "Thomas_K_John",
+        "number_of_doctors" : 4,
+        "number_of_nurses" : 8,
+        "location" : " Room_13,Block_3",
+        "phone" : 6234568707,
+        "email" : "criticalcare@gmail.com",
+        "website" : "www.criticalcare.com",
+        "description" : " medical care for people who have life-threatening injuries and illnesses",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f980a898d125b21d13042b"),
+        "name" : "Diabetology",
+        "head_of_department" : "Colin",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 1,
+        "location" : " Room_9,Block_2",
+        "phone" : 6234568734,
+        "email" : "diabetology@gmail.com",
+        "website" : "www.diabetology.com",
+        "description" : "a medical specialty that focuses on the diagnosis, treatment, and management of diabetes",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f981a898d125b21d13042c"),
+        "name" : "Surgery",
+        "head_of_department" : "Colin",
+        "number_of_doctors" : 11,
+        "number_of_nurses" : 20,
+        "location" : " Room_9,Block_2",
+        "phone" : 6234568734,
+        "email" : "surgery@gmail.com",
+        "website" : "www.surgery.com",
+        "description" : "operating theaters with a professional surgical team to perform operations",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f982d698d125b21d13042d"),
+        "name" : "DIP",
+        "head_of_department" : "Antony_Newton",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_4,Block_1",
+        "phone" : 6234568744,
+        "email" : "dip@gmail.com",
+        "website" : "www.dip.com",
+        "description" : "Treatment related to pneumonia",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f983a598d125b21d13042e"),
+        "name" : "Obstetrics",
+        "head_of_department" : "Marykuty",
+        "number_of_doctors" : 2,
+        "number_of_nurses" : 5,
+        "location" : " Room_5,Block_1",
+        "phone" : 6234568789,
+        "email" : "obstetrics@gmail.com",
+        "website" : "www.obstetrics.com",
+        "description" : "a specialty that is concerned with the mother and fetus during pregnancy, childbirth, and the immediate postpartum period",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f9846398d125b21d13042f"),
+        "name" : "Venereology",
+        "head_of_department" : "Sunena_Azeem",
+        "number_of_doctors" : 1,
+        "number_of_nurses" : 5,
+        "location" : " Room_19,Block_4",
+        "phone" : 6234568777,
+        "email" : "venereology@gmail.com",
+        "website" : "www.venereology.com",
+        "description" : "a branch of medicine that is concerned with the study and treatment of sexually transmitted diseases (STDs)",
+        "consulting_time" : "9 am to 1 pm"
+}
+{
+        "_id" : ObjectId("65f987da98d125b21d130430"),
+        "name" : "General_Medicine",
+        "head_of_department" : "Colin",
+        "number_of_doctors" : 3,
+        "number_of_nurses" : 8,
+        "location" : " Room_9,Block_2",
+        "phone" : 6234568734,
+        "email" : "generalmedicine@gmail.com",
+        "website" : "www.generalmedicine.com",
+        "description" : "providing frontline diagnostic support for patients with a wide range of illness",
+        "consulting_time" : "9 am to 1 pm"
+}
+> db.doctor.find().pretty()
+{
+        "_id" : ObjectId("65f8f7fa99b5d329fa43744d"),
+        "Name" : "Bindhu_Rajagopal",
+        "Gender" : "Female",
+        "Age" : 43,
+        "Qualification" : "MBBS,DNB,MNAMS",
+        "Specialization" : "Internal_Medicine",
+        "Salary" : "10 lakhs",
+        "Experience" : "20 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 1,
+        "Address" : "Santhwanam_Tvm"
+}
+{
+        "_id" : ObjectId("65f8f8f699b5d329fa43744e"),
+        "Name" : "Anu_Antony_Varghese",
+        "Gender" : "Male",
+        "Age" : 48,
+        "Qualification" : "MBBS,MS,FALS",
+        "Specialization" : "Bariatric & Venous",
+        "Salary" : "15 lakhs",
+        "Experience" : "25 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 2,
+        "Address" : "Bethel_Tvm"
+}
+{
+        "_id" : ObjectId("65f8f98999b5d329fa43744f"),
+        "Name" : "Hanock_Unni_Samuel",
+        "Gender" : "Male",
+        "Age" : 40,
+        "Qualification" : "MBBS,MD,DNB,DM NEPHROLOGY",
+        "Specialization" : "General Medicine & Nephrology",
+        "Salary" : "12 lakhs",
+        "Experience" : "19 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 3,
+        "Address" : "Samuel_Tvm"
+}
+{
+        "_id" : ObjectId("65f8fa0699b5d329fa437450"),
+        "Name" : "Antony_Newton",
+        "Gender" : "Male",
+        "Age" : 50,
+        "Qualification" : "BSC,MBBS,MD,DIP",
+        "Specialization" : "General Medicine",
+        "Salary" : "15 lakhs",
+        "Experience" : "25 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 4,
+        "Address" : "Antony_Tvm"
+}
+{
+        "_id" : ObjectId("65f8fa9499b5d329fa437451"),
+        "Name" : "Marykuty",
+        "Gender" : "Female",
+        "Age" : 50,
+        "Qualification" : "MD,DGO",
+        "Specialization" : "Gynecology",
+        "Salary" : "15 lakhs",
+        "Experience" : "25 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 5,
+        "Address" : "Swargam_Tvm"
+}
+{
+        "_id" : ObjectId("65f8faea99b5d329fa437452"),
+        "Name" : "William",
+        "Gender" : "Male",
+        "Age" : 36,
+        "Qualification" : "MDS",
+        "Specialization" : "Dental",
+        "Salary" : "10 lakhs",
+        "Experience" : "18 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 6,
+        "Address" : "Bethlehem_Tvm"
+}
+{
+        "_id" : ObjectId("65f8fb2f99b5d329fa437453"),
+        "Name" : "Leji_Aprem",
+        "Gender" : "Female",
+        "Age" : 37,
+        "Qualification" : "BDS",
+        "Specialization" : "Dental",
+        "Salary" : "8 lakhs",
+        "Experience" : "15 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 7,
+        "Address" : "Leji_Tvm"
+}
+{
+        "_id" : ObjectId("65f8fc8799b5d329fa437454"),
+        "Name" : "Nisha_Nishanth",
+        "Gender" : "Female",
+        "Age" : 43,
+        "Qualification" : "MBBS,DGO,DNB,FMAS,FMIS",
+        "Specialization" : "Gynecology",
+        "Salary" : "15 lakhs",
+        "Experience" : "13 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 8,
+        "Address" : "Ariel_Tvm"
+}
+{
+        "_id" : ObjectId("65f8fd9599b5d329fa437455"),
+        "Name" : "Prem_Krishnan",
+        "Gender" : "Male",
+        "Age" : 46,
+        "Qualification" : "MBBS,MD,DM",
+        "Specialization" : "Neurology",
+        "Salary" : "15 lakhs",
+        "Experience" : "12 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 10,
+        "Address" : "Krishnan_Tvm"
+}
+{
+        "_id" : ObjectId("65f8fe0d99b5d329fa437456"),
+        "Name" : "Janet_Indu_Lily",
+        "Gender" : "Female",
+        "Age" : 48,
+        "Qualification" : "MBBS,DNB,MNAMS,DM",
+        "Specialization" : "Gastroenterology",
+        "Salary" : "15 lakhs",
+        "Experience" : "14 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 11,
+        "Address" : "Lily_Tvm"
+}
+{
+        "_id" : ObjectId("65f8fe8299b5d329fa437457"),
+        "Name" : "Jineesh_Joseph",
+        "Gender" : "Male",
+        "Age" : 45,
+        "Qualification" : "MBBS,DNB",
+        "Specialization" : "Respiratory_Medicine",
+        "Salary" : "13 lakhs",
+        "Experience" : "10 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 12,
+        "Address" : "Joseph_Tvm"
+}
+{
+        "_id" : ObjectId("65f8feeb99b5d329fa437458"),
+        "Name" : "Thomas_K_John",
+        "Gender" : "Male",
+        "Age" : 48,
+        "Qualification" : "MBBS,DNB,DM",
+        "Specialization" : "Anaesthesiology & Critical Care",
+        "Salary" : "15 lakhs",
+        "Experience" : "13 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 13,
+        "Address" : "John_Tvm"
+}
+{
+        "_id" : ObjectId("65f8ff3399b5d329fa437459"),
+        "Name" : "Don_Sebastian",
+        "Gender" : "Male",
+        "Age" : 43,
+        "Qualification" : "MBBS,MD",
+        "Specialization" : "Anaesthesiology & Critical Care",
+        "Salary" : "10 lakhs",
+        "Experience" : "10 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 14,
+        "Address" : "Sebastian_Tvm"
+}
+{
+        "_id" : ObjectId("65f8ff6199b5d329fa43745a"),
+        "Name" : "Nidhin_Alex",
+        "Gender" : "Male",
+        "Age" : 43,
+        "Qualification" : "MBBS,MD",
+        "Specialization" : "Anaesthesiology & Critical Care",
+        "Salary" : "10 lakhs",
+        "Experience" : "10 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 15,
+        "Address" : "Alex_Tvm"
+}
+{
+        "_id" : ObjectId("65f8ff8899b5d329fa43745b"),
+        "Name" : "Aashique",
+        "Gender" : "Male",
+        "Age" : 43,
+        "Qualification" : "MBBS,MD",
+        "Specialization" : "Anaesthesiology & Critical Care",
+        "Salary" : "10 lakhs",
+        "Experience" : "10 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 16,
+        "Address" : "Aashique_Tvm"
+}
+{
+        "_id" : ObjectId("65f8ffe599b5d329fa43745c"),
+        "Name" : "Priya_Joy",
+        "Gender" : "Female",
+        "Age" : 38,
+        "Qualification" : "MBBS,MD",
+        "Specialization" : "Pulmonology",
+        "Salary" : "9 lakhs",
+        "Experience" : "13 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 17,
+        "Address" : "Joy_Tvm"
+}
+{
+        "_id" : ObjectId("65f9005099b5d329fa43745d"),
+        "Name" : "Anbalagan",
+        "Gender" : "Male",
+        "Age" : 45,
+        "Qualification" : "MBBS,DLO",
+        "Specialization" : "ENT",
+        "Salary" : "13 lakhs",
+        "Experience" : "15 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 18,
+        "Address" : "Krishna_Tvm"
+}
+{
+        "_id" : ObjectId("65f9009b99b5d329fa43745e"),
+        "Name" : "Sunena_Azeem",
+        "Gender" : "Female",
+        "Age" : 38,
+        "Qualification" : "MBBS,DDVL",
+        "Specialization" : "Dermatology",
+        "Salary" : "10 lakhs",
+        "Experience" : "12 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 19,
+        "Address" : "Azeem_Tvm"
+}
+{
+        "_id" : ObjectId("65f900f599b5d329fa43745f"),
+        "Name" : "Anju_Mary_Mathews",
+        "Gender" : "Female",
+        "Age" : 38,
+        "Qualification" : "MBBS,DCH",
+        "Specialization" : "Paediatrics",
+        "Salary" : "8 lakhs",
+        "Experience" : "10 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 20,
+        "Address" : "Mathews_Tvm"
+}
+{
+        "_id" : ObjectId("65f9018d99b5d329fa437460"),
+        "Name" : "Colin",
+        "Gender" : "Male",
+        "Age" : 48,
+        "Qualification" : "MBBS,MD,PG in Diabetology",
+        "Specialization" : "General_Medicine",
+        "Salary" : "12 lakhs",
+        "Experience" : "15 years",
+        "Consulting_Time" : "9 am to 1 pm",
+        "Consulting_Room" : 9,
+        "Address" : "Puthenpurayil_Tvm"
+}
+> db.insuranceplans.find().pretty()
+{
+        "_id" : ObjectId("66001f8b92b6a620238390f0"),
+        "plan_name" : "Gold Health Plan",
+        "provider" : "Health Insurance Inc.",
+        "coverage_type" : "Comprehensive",
+        "deductible" : 1500,
+        "copay_amount" : 20,
+        "maximum_coverage" : 100000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Preventive care covered",
+                "Hospitalization covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Vision care covered",
+                "Dental care covered"
+        ]
+}
+{
+        "_id" : ObjectId("66002058e2590e82d25202b3"),
+        "plan_name" : "Silver Health Plan",
+        "provider" : "MediCare Insurance",
+        "coverage_type" : "Standard",
+        "deductible" : 2000,
+        "copay_amount" : 25,
+        "maximum_coverage" : 75000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Emergency services covered",
+                "Prescription drugs covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Physical therapy covered",
+                "Mental health services covered"
+        ]
+}
+{
+        "_id" : ObjectId("660020e0e2590e82d25202b4"),
+        "plan_name" : "Bronze Health Plan",
+        "provider" : "Healthcare United",
+        "coverage_type" : "Basic",
+        "deductible" : 3000,
+        "copay_amount" : 30,
+        "maximum_coverage" : 50000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Maternity care covered",
+                "Surgery covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Ambulance services covered",
+                "Diagnostic tests covered"
+        ]
+}
+{
+        "_id" : ObjectId("66002157e2590e82d25202b5"),
+        "plan_name" : "Platinum Health Plan",
+        "provider" : "Guardian Health",
+        "coverage_type" : "Premium",
+        "deductible" : 1000,
+        "copay_amount" : 15,
+        "maximum_coverage" : 150000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Cancer treatment covered",
+                "Specialized care covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Chiropractic care covered",
+                "Hearing aids covered"
+        ]
+}
+{
+        "_id" : ObjectId("660021cce2590e82d25202b6"),
+        "plan_name" : "Essential Health Plan",
+        "provider" : "HealthFirst Insurance",
+        "coverage_type" : "Standard",
+        "deductible" : 2500,
+        "copay_amount" : 25,
+        "maximum_coverage" : 80000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Pediatric care covered",
+                "Physical therapy covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Home health care covered",
+                "Rehabilitation services covered"
+        ]
+}
+{
+        "_id" : ObjectId("6600223de2590e82d25202b7"),
+        "plan_name" : "Family Health Plan",
+        "provider" : "FamilyCare Insurance",
+        "coverage_type" : "Comprehensive",
+        "deductible" : 2000,
+        "copay_amount" : 20,
+        "maximum_coverage" : 120000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Maternity care covered",
+                "Preventive care covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Nutritional counseling covered",
+                "Prescription drugs covered"
+        ]
+}
+{
+        "_id" : ObjectId("660022abe2590e82d25202b8"),
+        "plan_name" : "Senior Health Plan",
+        "provider" : "SeniorHealth Inc.",
+        "coverage_type" : "Premium",
+        "deductible" : 1500,
+        "copay_amount" : 20,
+        "maximum_coverage" : 100000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Hearing aids covered",
+                "Vision care covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Home health care covered",
+                "Mobility aids covered"
+        ]
+}
+{
+        "_id" : ObjectId("66002312e2590e82d25202b9"),
+        "plan_name" : "Student Health Plan",
+        "provider" : "StudentCare Insurance",
+        "coverage_type" : "Basic",
+        "deductible" : 3000,
+        "copay_amount" : 30,
+        "maximum_coverage" : 60000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Emergency services covered",
+                "Ambulance services covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Counseling services covered",
+                "Prescription drugs covered"
+        ]
+}
+{
+        "_id" : ObjectId("6600237be2590e82d25202ba"),
+        "plan_name" : "Corporate Health Plan",
+        "provider" : "CorporateHealth Insurance",
+        "coverage_type" : "Standard",
+        "deductible" : 2500,
+        "copay_amount" : 25,
+        "maximum_coverage" : 90000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Preventive care covered",
+                "Physical therapy covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Employee wellness programs covered",
+                "Health screenings covered"
+        ]
+}
+{
+        "_id" : ObjectId("660023e3e2590e82d25202bb"),
+        "plan_name" : "Wellness Health Plan",
+        "provider" : "Wellness Insurance",
+        "coverage_type" : "Basic",
+        "deductible" : 3000,
+        "copay_amount" : 30,
+        "maximum_coverage" : 50000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Preventive care covered",
+                "Mental health services covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Smoking cessation programs covered",
+                "Dietary counseling covered"
+        ]
+}
+{
+        "_id" : ObjectId("66002442e2590e82d25202bc"),
+        "plan_name" : "Premium Health Plan",
+        "provider" : "PremiumCare Insurance",
+        "coverage_type" : "Comprehensive",
+        "deductible" : 2000,
+        "copay_amount" : 20,
+        "maximum_coverage" : 130000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Maternity care covered",
+                "Specialized care covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Prescription drugs covered",
+                "Chiropractic care covered"
+        ]
+}
+{
+        "_id" : ObjectId("660024a5e2590e82d25202bd"),
+        "plan_name" : "Standard Health Plan",
+        "provider" : "Standard Insurance",
+        "coverage_type" : "Standard",
+        "deductible" : 2500,
+        "copay_amount" : 25,
+        "maximum_coverage" : 80000,
+        "coverage_period" : "Annual",
+        "special_conditions" : [
+                "Emergency services covered",
+                "Diagnostic tests covered"
+        ],
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : [
+                "Rehabilitation services covered",
+                "Home health care covered"
+        ]
+}
+{
+        "_id" : ObjectId("6600321de2590e82d25202be"),
+        "plan_name" : "Gold Plus",
+        "provider" : "Blue Cross Blue Shield",
+        "coverage_type" : "Comprehensive",
+        "deductible" : 1000,
+        "copay_amount" : 30,
+        "maximum_coverage" : 100000,
+        "coverage_period" : "Annual",
+        "special_conditions" : "Preventive care included",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "Gym membership reimbursement"
+}
+{
+        "_id" : ObjectId("6600328ce2590e82d25202bf"),
+        "plan_name" : "Silver Plus",
+        "provider" : "Aetna",
+        "coverage_type" : "Basic",
+        "deductible" : 1500,
+        "copay_amount" : 40,
+        "maximum_coverage" : 80000,
+        "coverage_period" : "Annual",
+        "special_conditions" : "No coverage for elective procedures",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "Telemedicine"
+}
+{
+        "_id" : ObjectId("66003303e2590e82d25202c0"),
+        "plan_name" : "Platinum Elite",
+        "provider" : "Cigna",
+        "coverage_type" : "Premium",
+        "deductible" : 750,
+        "copay_amount" : 20,
+        "maximum_coverage" : 150000,
+        "coverage_period" : "Annual",
+        "special_conditions" : "Coverage for out-of-network emergencies",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "Vision and dental coverage"
+}
+{
+        "_id" : ObjectId("6600336ae2590e82d25202c1"),
+        "plan_name" : "Bronze Basic",
+        "provider" : "UnitedHealthcare",
+        "coverage_type" : "Limited",
+        "deductible" : 2000,
+        "copay_amount" : 50,
+        "maximum_coverage" : 60000,
+        "coverage_period" : "Annual",
+        "special_conditions" : "Discounts for wellness programs",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "Prescription drug coverage"
+}
+{
+        "_id" : ObjectId("660033e7e2590e82d25202c2"),
+        "plan_name" : "Family First",
+        "provider" : "Humana",
+        "coverage_type" : "Family",
+        "deductible" : 1200,
+        "copay_amount" : 35,
+        "maximum_coverage" : 120000,
+        "coverage_period" : "Annual",
+        "special_conditions" : "Maternity care covered",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "Health savings account"
+}
+{
+        "_id" : ObjectId("66003476e2590e82d25202c3"),
+        "plan_name" : "Senior Secure",
+        "provider" : "Medicare",
+        "coverage_type" : "Senior",
+        "deductible" : 500,
+        "copay_amount" : 25,
+        "maximum_coverage" : 75000,
+        "coverage_period" : "Annual",
+        "special_conditions" : "No age limit",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "SilverSneakers fitness program"
+}
+{
+        "_id" : ObjectId("66003500e2590e82d25202c4"),
+        "plan_name" : "Essential Care",
+        "provider" : "Kaiser Permanente",
+        "coverage_type" : "Essential",
+        "deductible" : 1000,
+        "copay_amount" : 30,
+        "maximum_coverage" : 90000,
+        "coverage_period" : "Annual",
+        "special_condition" : "Integrated care model",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "Online health tools"
+}
+{
+        "_id" : ObjectId("66003573e2590e82d25202c5"),
+        "plan_name" : "Corporate Choice",
+        "provider" : "Aflac",
+        "coverage_type" : "Group",
+        "deductible" : 2000,
+        "copay_amount" : 50,
+        "maximum_coverage" : 150000,
+        "coverage_period" : "Annual",
+        "special_condition" : "Employer-sponsored",
+        "hospital_network" : "Amala Hospital",
+        "additional_benefits" : "Accident insurance"
+}
+> db.lab.find().pretty()
+{
+        "_id" : ObjectId("65f9b3a598d125b21d130459"),
+        "sample_id" : 1,
+        "patient_name" : "Sona",
+        "age" : 35,
+        "Gender" : "Female",
+        "Test_Type" : "urinalysis",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Bindhu_Rajagopal & Thomas_K_John",
+        "Nurse" : "Gouri",
+        "Date" : "12-01-2024",
+        "Time" : "10 am"
+}
+{
+        "_id" : ObjectId("65f9d6ec98d125b21d13045a"),
+        "sample_id" : 2,
+        "patient_name" : "Rahul",
+        "age" : 35,
+        "Gender" : "Male",
+        "Test_Type" : "Blood_Test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Colin",
+        "Nurse" : "Pooja",
+        "Date" : "02-01-2024",
+        "Time" : "11 am"
+}
+{
+        "_id" : ObjectId("65f9d78098d125b21d13045b"),
+        "sample_id" : 3,
+        "patient_name" : "Rohan",
+        "age" : 30,
+        "Gender" : "Male",
+        "Test_Type" : "blood_Pressure",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Anu_Antony_Varghese & Colin",
+        "Nurse" : "Pooja",
+        "Date" : "24-01-2024",
+        "Time" : "11:30 am"
+}
+{
+        "_id" : ObjectId("65f9d87198d125b21d13045c"),
+        "sample_id" : 4,
+        "patient_name" : "Feba",
+        "age" : 38,
+        "Gender" : "Female",
+        "Test_Type" : "blood_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Hanock_Unni_Samuel & Colin",
+        "Nurse" : "Sheethal",
+        "Date" : "23-01-2024",
+        "Time" : "10:30 am"
+}
+{
+        "_id" : ObjectId("65f9d96298d125b21d13045d"),
+        "sample_id" : 5,
+        "patient_name" : "Reena",
+        "age" : 25,
+        "Gender" : "Female",
+        "Test_Type" : "blood_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Marykuty",
+        "Nurse" : "Farhana",
+        "Date" : "28-01-2024",
+        "Time" : "10:30 am"
+}
+{
+        "_id" : ObjectId("65f9da1b98d125b21d13045e"),
+        "sample_id" : 6,
+        "patient_name" : "Anoop",
+        "age" : 30,
+        "Gender" : "Male",
+        "Test_Type" : "chemical_testing",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Leji_Aprem",
+        "Nurse" : "Akhil",
+        "Date" : "25-01-2024",
+        "Time" : "12:30 am"
+}
+{
+        "_id" : ObjectId("65f9dc2798d125b21d13045f"),
+        "sample_id" : 7,
+        "patient_name" : "Meena",
+        "age" : 45,
+        "Gender" : "Female",
+        "Test_Type" : "computed_tomography",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Prem_Krishnan",
+        "Nurse" : "Alan",
+        "Date" : "20-01-2024",
+        "Time" : "12:00 pm"
+}
+{
+        "_id" : ObjectId("65f9de1198d125b21d130460"),
+        "sample_id" : 8,
+        "patient_name" : "Mohan",
+        "age" : 48,
+        "Gender" : "Male",
+        "Test_Type" : "blood_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Janet_Indu_Lily",
+        "Nurse" : "Aleena",
+        "Date" : "15-01-2024",
+        "Time" : "01:00 pm"
+}
+{
+        "_id" : ObjectId("65f9de9898d125b21d130461"),
+        "sample_id" : 9,
+        "patient_name" : "Binu",
+        "age" : 34,
+        "Gender" : "Male",
+        "Test_Type" : "blood_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Jineesh_Joseph",
+        "Nurse" : "Smitha",
+        "Date" : "17-01-2024",
+        "Time" : "01:30 pm"
+}
+{
+        "_id" : ObjectId("65f9df6098d125b21d130462"),
+        "sample_id" : 10,
+        "patient_name" : "Vincy",
+        "age" : 39,
+        "Gender" : "Female",
+        "Test_Type" : "blood_test",
+        "Test_Result" : "Normal",
+        "Consulted_Doctor" : "Thomas_K_John",
+        "Nurse" : "Sheena",
+        "Date" : "29-01-2024",
+        "Time" : "02:30 pm"
+}
+{
+        "_id" : ObjectId("65f9e03498d125b21d130463"),
+        "sample_id" : 11,
+        "patient_name" : "Sandra",
+        "age" : 30,
+        "Gender" : "Female",
+        "Test_Type" : "blood_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Priya_Joy",
+        "Nurse" : "Anu",
+        "Date" : "02-02-2024",
+        "Time" : "02:00 pm"
+}
+{
+        "_id" : ObjectId("65f9e10998d125b21d130464"),
+        "sample_id" : 12,
+        "patient_name" : "Kumar",
+        "age" : 50,
+        "Gender" : "Male",
+        "Test_Type" : "screening_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Anbalagan & Colin",
+        "Nurse" : "Ron",
+        "Date" : "12-02-2024",
+        "Time" : "02:15 pm"
+}
+{
+        "_id" : ObjectId("65f9e23298d125b21d130465"),
+        "sample_id" : 13,
+        "patient_name" : "Sneha",
+        "age" : 21,
+        "Gender" : "Female",
+        "Test_Type" : " acute_bronchitis",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Sunena_Azeem",
+        "Nurse" : "Roshni",
+        "Date" : "15-02-2024",
+        "Time" : "03:15 pm"
+}
+{
+        "_id" : ObjectId("65f9e77198d125b21d130466"),
+        "sample_id" : 14,
+        "patient_name" : "Beena",
+        "age" : 42,
+        "Gender" : "Female",
+        "Test_Type" : "Fasting_Blood_Sugar_Test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Colin",
+        "Nurse" : "Arun",
+        "Date" : "18-02-2024",
+        "Time" : "04:45 pm"
+}
+{
+        "_id" : ObjectId("65f9e7fa98d125b21d130467"),
+        "sample_id" : 15,
+        "patient_name" : "Sera",
+        "age" : 5,
+        "Gender" : "Female",
+        "Test_Type" : "CBC (Complete_Blood_Count)",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Anju_Mary_Mathews",
+        "Nurse" : "Rona",
+        "Date" : "20-02-2024",
+        "Time" : "05:00 pm"
+}
+{
+        "_id" : ObjectId("65f9e89d98d125b21d130468"),
+        "sample_id" : 16,
+        "patient_name" : "Pradeep",
+        "age" : 55,
+        "Gender" : "Male",
+        "Test_Type" : "ECG (Electrocardiogram)",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Thomas_K_John",
+        "Nurse" : "Arjun",
+        "Date" : "25-02-2024",
+        "Time" : "05:30 pm"
+}
+{
+        "_id" : ObjectId("65f9e92b98d125b21d130469"),
+        "sample_id" : 17,
+        "patient_name" : "Manu",
+        "age" : 42,
+        "Gender" : "Male",
+        "Test_Type" : "chest_X-ray",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Antony_Newton",
+        "Nurse" : "Bincy",
+        "Date" : "24-02-2024",
+        "Time" : "11:30 am"
+}
+{
+        "_id" : ObjectId("65f9e9a798d125b21d13046a"),
+        "sample_id" : 18,
+        "patient_name" : "Varsha",
+        "age" : 22,
+        "Gender" : "Female",
+        "Test_Type" : "blood_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Marykuty",
+        "Nurse" : "Greeshma",
+        "Date" : "27-02-2024",
+        "Time" : "01:30 pm"
+}
+{
+        "_id" : ObjectId("65f9ea2798d125b21d13046b"),
+        "sample_id" : 19,
+        "patient_name" : "Veena",
+        "age" : 32,
+        "Gender" : "Female",
+        "Test_Type" : "nontreponemal_test",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Sunena_Azeem",
+        "Nurse" : "Roshni",
+        "Date" : "28-02-2024",
+        "Time" : "02:40 pm"
+}
+{
+        "_id" : ObjectId("65f9eaa998d125b21d13046c"),
+        "sample_id" : 20,
+        "patient_name" : "Jyothi",
+        "age" : 20,
+        "Gender" : "Female",
+        "Test_Type" : "PCR",
+        "Test_Result" : "Not normal",
+        "Consulted_Doctor" : "Colin",
+        "Nurse" : "Pooja",
+        "Date" : "23-02-2024",
+        "Time" : "11:40 am"
+}
+> db.medicalrecords.find().pretty()
+{
+        "_id" : ObjectId("65fcfcb9abe90dcee4dd3390"),
+        "patient_name" : "Rahul",
+        "age" : 23,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "fever",
+        "medication" : "acetaminophen",
+        "dosage" : "500 mg",
+        "doctor" : "Colin",
+        "admission_date" : "12-01-2024",
+        "discharge_date" : "14-01-2024"
+}
+{
+        "_id" : ObjectId("65fcfcddabe90dcee4dd3391"),
+        "patient_name" : "Reena",
+        "age" : 21,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "fever",
+        "medication" : "acetaminophen",
+        "dosage" : "500 mg",
+        "doctor" : "Colin",
+        "admission_date" : "11-01-2024",
+        "discharge_date" : "13-01-2024"
+}
+{
+        "_id" : ObjectId("65fcfd6dabe90dcee4dd3392"),
+        "patient_name" : "Sheena",
+        "age" : 19,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Cough",
+        "medication" : "Amoxicillin",
+        "dosage" : "500 mg",
+        "doctor" : "Colin",
+        "admission_date" : "13-01-2024",
+        "discharge_date" : "14-01-2024"
+}
+{
+        "_id" : ObjectId("65fcfe0cabe90dcee4dd3393"),
+        "patient_name" : "Annie",
+        "age" : 19,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Hypertension",
+        "medication" : "Lisinopril",
+        "dosage" : "10 mg",
+        "doctor" : "Colin",
+        "admission_date" : "01-01-2024",
+        "discharge_date" : "01-01-2024"
+}
+{
+        "_id" : ObjectId("65fcfec8abe90dcee4dd3394"),
+        "patient_name" : "Sona",
+        "age" : 29,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Pregnancy",
+        "medication" : "analgesics",
+        "dosage" : "10 mg",
+        "doctor" : "Marykuty",
+        "admission_date" : "01-01-2024",
+        "discharge_date" : "10-01-2024"
+}
+{
+        "_id" : ObjectId("65fedcd703617cb306817d31"),
+        "patient_name" : "Sanu",
+        "age" : 25,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "cough",
+        "medication" : "Amoxicillin",
+        "dosage" : "500 mg",
+        "doctor" : "Colin",
+        "admission_date" : "14-01-2024",
+        "discharge_date" : "15-01-2024"
+}
+{
+        "_id" : ObjectId("65ff042403617cb306817d32"),
+        "patient_name" : "Roshan",
+        "age" : 23,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "Chickenpox",
+        "medication" : "Antibiotics",
+        "dosage" : "500 mg",
+        "doctor" : "Colin",
+        "admission_date" : "15-01-2024",
+        "discharge_date" : "20-01-2024"
+}
+{
+        "_id" : ObjectId("65ff04db03617cb306817d33"),
+        "patient_name" : "Jeny",
+        "age" : 20,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Syphilis",
+        "medication" : "Benzathine_Penicillin",
+        "dosage" : "G 2.4 million units",
+        "doctor" : "Sunena_Azeem",
+        "admission_date" : "15-01-2024",
+        "discharge_date" : "20-01-2024"
+}
+{
+        "_id" : ObjectId("65ff055903617cb306817d34"),
+        "patient_name" : "Vini",
+        "age" : 32,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Postpartum_Hemorrhage",
+        "medication" : "oxytocin",
+        "dosage" : " 10 unit",
+        "doctor" : "Marykuty",
+        "admission_date" : "17-01-2024",
+        "discharge_date" : "22-01-2024"
+}
+{
+        "_id" : ObjectId("65ff05da03617cb306817d35"),
+        "patient_name" : "Arya",
+        "age" : 32,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "pneumonia",
+        "medication" : "azithromycin",
+        "dosage" : " 250 mg",
+        "doctor" : "Antony_Newton",
+        "admission_date" : "17-01-2024",
+        "discharge_date" : "20-01-2024"
+}
+{
+        "_id" : ObjectId("65ff073b03617cb306817d38"),
+        "patient_name" : "Kannan",
+        "age" : 52,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "Heart_Attack",
+        "medication" : "Aspirin",
+        "dosage" : " 81 mg",
+        "doctor" : "Thomas_K_John",
+        "admission_date" : "19-01-2024",
+        "discharge_date" : "20-02-2024"
+}
+{
+        "_id" : ObjectId("65ff094403617cb306817d39"),
+        "patient_name" : "Sara",
+        "age" : 22,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Fever",
+        "medication" : "acetaminophen",
+        "dosage" : "500 mg",
+        "doctor" : "Anju_Mary_Mathews",
+        "admission_date" : "19-01-2024",
+        "discharge_date" : "22-01-2024"
+}
+{
+        "_id" : ObjectId("65ff095903617cb306817d3a"),
+        "patient_name" : "Annie",
+        "age" : 22,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Fever",
+        "medication" : "acetaminophen",
+        "dosage" : "500 mg",
+        "doctor" : "Anju_Mary_Mathews",
+        "admission_date" : "20-01-2024",
+        "discharge_date" : "23-01-2024"
+}
+{
+        "_id" : ObjectId("65ff096e03617cb306817d3b"),
+        "patient_name" : "Seena",
+        "age" : 32,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Fever",
+        "medication" : "acetaminophen",
+        "dosage" : "500 mg",
+        "doctor" : "Anju_Mary_Mathews",
+        "admission_date" : "20-01-2024",
+        "discharge_date" : "23-01-2024"
+}
+{
+        "_id" : ObjectId("65ff098003617cb306817d3c"),
+        "patient_name" : "Shirly",
+        "age" : 32,
+        "place" : "Tvm",
+        "gender" : "Female",
+        "diagnosis" : "Fever",
+        "medication" : "acetaminophen",
+        "dosage" : "500 mg",
+        "doctor" : "Anju_Mary_Mathews",
+        "admission_date" : "21-01-2024",
+        "discharge_date" : "24-01-2024"
+}
+{
+        "_id" : ObjectId("65ff0ade03617cb306817d3d"),
+        "patient_name" : "Alan",
+        "age" : 32,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "Fever",
+        "medication" : "acetaminophen",
+        "dosage" : "500 mg",
+        "doctor" : "Anju_Mary_Mathews",
+        "admission_date" : "22-01-2024",
+        "discharge_date" : "25-01-2024"
+}
+{
+        "_id" : ObjectId("65ff0b0c03617cb306817d3e"),
+        "patient_name" : "Arjun",
+        "age" : 34,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "Pneumonia",
+        "medication" : "azithromycin",
+        "dosage" : "250 mg",
+        "doctor" : "Antony_Newton",
+        "admission_date" : "23-01-2024",
+        "discharge_date" : "25-01-2024"
+}
+{
+        "_id" : ObjectId("65ff0b2003617cb306817d3f"),
+        "patient_name" : "Sanjay",
+        "age" : 31,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "Pneumonia",
+        "medication" : "azithromycin",
+        "dosage" : "250 mg",
+        "doctor" : "Antony_Newton",
+        "admission_date" : "23-01-2024",
+        "discharge_date" : "25-01-2024"
+}
+{
+        "_id" : ObjectId("65ff0b6903617cb306817d40"),
+        "patient_name" : "Sanu",
+        "age" : 31,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "Severe_headache",
+        "medication" : "Paracetamol",
+        "dosage" : "500 mg",
+        "doctor" : "Colin",
+        "admission_date" : "25-01-2024",
+        "discharge_date" : "26-01-2024"
+}
+{
+        "_id" : ObjectId("65ff0b8303617cb306817d41"),
+        "patient_name" : "Varun",
+        "age" : 35,
+        "place" : "Tvm",
+        "gender" : "Male",
+        "diagnosis" : "Severe_headache",
+        "medication" : "Paracetamol",
+        "dosage" : "500 mg",
+        "doctor" : "Colin",
+        "admission_date" : "25-01-2024",
+        "discharge_date" : "26-01-2024"
+}
+> db.medications.find().pretty()
+{
+        "_id" : ObjectId("65ff8e6d020ecb6963665c31"),
+        "medication_id" : 1,
+        "medication_name" : "paracetamol",
+        "dosage" : "500 mg",
+        "stock_quantity" : 100,
+        "unit_price" : "0.3",
+        "manufacturer" : "Generic",
+        "expiry_date" : "05-05-2024",
+        "prescription_required" : "false",
+        "storage_condition" : "cool and dry place",
+        "usage_instructions" : "Take up to 4 times daily with or without food"
+}
+{
+        "_id" : ObjectId("65ff8ed8020ecb6963665c32"),
+        "medication_id" : 2,
+        "medication_name" : "Aspirin",
+        "dosage" : "100 mg",
+        "stock_quantity" : 50,
+        "unit_price" : "0.5",
+        "manufacturer" : "Bayer",
+        "expiry_date" : "05-05-2024",
+        "prescription_required" : "false",
+        "storage_condition" : "Room Temperature",
+        "usage_instructions" : "Take with water after meal"
+}
+{
+        "_id" : ObjectId("65ff8fda020ecb6963665c33"),
+        "medication_id" : 3,
+        "medication_name" : "Amoxicillin",
+        "dosage" : "250 mg",
+        "stock_quantity" : 50,
+        "unit_price" : "1.2",
+        "manufacturer" : "XYZ Pharmaceuticals",
+        "expiry_date" : "15-12-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Cool and dry place",
+        "usage_instructions" : "three times a day with or without food"
+}
+{
+        "_id" : ObjectId("65ff9090020ecb6963665c34"),
+        "medication_id" : 4,
+        "medication_name" : "Lisinopril",
+        "dosage" : "10 mg",
+        "stock_quantity" : 30,
+        "unit_price" : "2.8",
+        "manufacturer" : "PQR Pharma",
+        "expiry_date" : "30-09-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Room Temperature",
+        "usage_instructions" : "take it around the same time every day"
+}
+{
+        "_id" : ObjectId("65ff9140020ecb6963665c35"),
+        "medication_id" : 5,
+        "medication_name" : "Atorvastatin",
+        "dosage" : "20 mg",
+        "stock_quantity" : 25,
+        "unit_price" : "3.5",
+        "manufacturer" : "LMN Laboratories",
+        "expiry_date" : "20-11-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Room Temperature",
+        "usage_instructions" : "Swallow with a whole drink of water"
+}
+{
+        "_id" : ObjectId("65ffc39192b6a620238390c9"),
+        "medication_id" : 6,
+        "medication_name" : "Omeprazole",
+        "dosage" : "20 mg",
+        "stock_quantity" : 40,
+        "unit_price" : "1.8",
+        "manufacturer" : "NOP Pharma",
+        "expiry_date" : "28-04-2024",
+        "prescription_required" : "false",
+        "storage_condition" : "Cool and dry place",
+        "usage_instructions" : "before a meal, preferably in the morning"
+}
+{
+        "_id" : ObjectId("65ffc43a92b6a620238390ca"),
+        "medication_id" : 7,
+        "medication_name" : "Diazepam",
+        "dosage" : "5 mg",
+        "stock_quantity" : 20,
+        "unit_price" : "2.3",
+        "manufacturer" : "QRS Pharmaceuticals",
+        "expiry_date" : "10-10-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Room temperature",
+        "usage_instructions" : "1 to 4 times a day and may be taken with or without food"
+}
+{
+        "_id" : ObjectId("65ffc4e692b6a620238390cb"),
+        "medication_id" : 8,
+        "medication_name" : "Metformin",
+        "dosage" : "500 mg",
+        "stock_quantity" : 60,
+        "unit_price" : "1.5",
+        "manufacturer" : "STU Laboratories",
+        "expiry_date" : "15-08-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Cool and dry place",
+        "usage_instructions" : "5 milliliters (mL) two times a day with meals"
+}
+{
+        "_id" : ObjectId("65ffc56c92b6a620238390cc"),
+        "medication_id" : 9,
+        "medication_name" : "Warfarin",
+        "dosage" : "5 mg",
+        "stock_quantity" : 15,
+        "unit_price" : "2.7",
+        "manufacturer" : "VWX Pharmaceuticals",
+        "expiry_date" : "01-10-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Room temperature",
+        "usage_instructions" : "2 to 5 milligrams (mg) as a single dose once per day"
+}
+{
+        "_id" : ObjectId("65ffc5fe92b6a620238390cd"),
+        "medication_id" : 10,
+        "medication_name" : "Simvastatin",
+        "dosage" : "40 mg",
+        "stock_quantity" : 35,
+        "unit_price" : "4.0",
+        "manufacturer" : "BCD Laboratories",
+        "expiry_date" : "20-09-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Cool and dry place",
+        "usage_instructions" : "between 10mg and 40mg once a day"
+}
+{
+        "_id" : ObjectId("65ffc7b492b6a620238390ce"),
+        "medication_id" : 11,
+        "medication_name" : "Albuterol",
+        "dosage" : "2.5 mg",
+        "stock_quantity" : 200,
+        "unit_price" : "0.3",
+        "manufacturer" : "GlaxoSmithKline",
+        "expiry_date" : "31-08-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Keep away from moisture",
+        "usage_instructions" : "Inhale as directed by your doctor for asthma symptoms"
+}
+{
+        "_id" : ObjectId("65ffc81f92b6a620238390cf"),
+        "medication_id" : 12,
+        "medication_name" : "Citalopram",
+        "dosage" : "20 mg",
+        "stock_quantity" : 350,
+        "unit_price" : "0.25",
+        "manufacturer" : "Aurobindo Pharma",
+        "expiry_date" : "31-05-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Store at room temperature",
+        "usage_instructions" : "Take one tablet by mouth daily for depression"
+}
+{
+        "_id" : ObjectId("65ffc96892b6a620238390d2"),
+        "medication_id" : 13,
+        "medication_name" : "Ibuprofen",
+        "dosage" : "50 mcg",
+        "stock_quantity" : 250,
+        "unit_price" : "0.4",
+        "manufacturer" : "AbbVie",
+        "expiry_date" : "30-09-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Store in a dry place away from sunlight",
+        "usage_instructions" : "Take one tablet by mouth daily for hypothyroidism"
+}
+{
+        "_id" : ObjectId("65ffc9d292b6a620238390d3"),
+        "medication_id" : 14,
+        "medication_name" : "Prednisone",
+        "dosage" : "10 mg",
+        "stock_quantity" : 600,
+        "unit_price" : "0.18",
+        "manufacturer" : "Sanofi",
+        "expiry_date" : "31-12-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Store below 25°C",
+        "usage_instructions" : "Take one tablet by mouth daily for inflammation"
+}
+{
+        "_id" : ObjectId("65ffca2e92b6a620238390d4"),
+        "medication_id" : 15,
+        "medication_name" : "Ciprofloxacin",
+        "dosage" : "500 mg",
+        "stock_quantity" : 500,
+        "unit_price" : "0.25",
+        "manufacturer" : "Aurobindo Pharma",
+        "expiry_date" : "31-10-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Store in a dry place away from sunlight",
+        "usage_instructions" : "Take one tablet by mouth twice daily for bacterial infections"
+}
+{
+        "_id" : ObjectId("65ffcbd492b6a620238390d5"),
+        "medication_id" : 16,
+        "medication_name" : "Tramadol",
+        "dosage" : "50 mg",
+        "stock_quantity" : 300,
+        "unit_price" : "0.08",
+        "manufacturer" : "Johnson & Johnson",
+        "expiry_date" : "31-12-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Room temperature",
+        "usage_instructions" : "Take one to two tablets every 4-6 hours as needed for pain"
+}
+{
+        "_id" : ObjectId("65ffcc5992b6a620238390d6"),
+        "medication_id" : 17,
+        "medication_name" : "Levothyroxine",
+        "dosage" : "50 mcg",
+        "stock_quantity" : 220,
+        "unit_price" : "0.11",
+        "manufacturer" : "AbbVie",
+        "expiry_date" : "28-04-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Cool and dry place",
+        "usage_instructions" : "Take one tablet daily on an empty stomach"
+}
+{
+        "_id" : ObjectId("65ffcd4692b6a620238390d7"),
+        "medication_id" : 18,
+        "medication_name" : "Metoprolol",
+        "dosage" : "25 mg",
+        "stock_quantity" : 85,
+        "unit_price" : "1.6",
+        "manufacturer" : "Novartis",
+        "expiry_date" : "31-12-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Store in a cool place",
+        "usage_instructions" : "Take with or without food"
+}
+{
+        "_id" : ObjectId("65ffcdb092b6a620238390d8"),
+        "medication_id" : 19,
+        "medication_name" : "Citalopram",
+        "dosage" : "20 mg",
+        "stock_quantity" : 70,
+        "unit_price" : "2.2",
+        "manufacturer" : "Lundbeck",
+        "expiry_date" : "31-05-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Keep container tightly closed",
+        "usage_instructions" : "Take once daily, in the morning or evening"
+}
+{
+        "_id" : ObjectId("65ffceab92b6a620238390d9"),
+        "medication_id" : 20,
+        "medication_name" : "Sertraline",
+        "dosage" : "50 mg",
+        "stock_quantity" : 100,
+        "unit_price" : "0.5",
+        "manufacturer" : "ABC Pharmaceuticals",
+        "expiry_date" : "30-06-2024",
+        "prescription_required" : "true",
+        "storage_condition" : "Store below 25°C in a dry place",
+        "usage_instructions" : "Take 1 tablet orally daily with or without food, or as directed by a healthcare professional"
+}
+> db.nurse.find().pretty()
+{
+        "_id" : ObjectId("65f9a9fb98d125b21d130445"),
+        "name" : "Linda",
+        "age" : 32,
+        "gender" : "Female",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Internal_Medicine",
+        "Salary" : 30000,
+        "address" : "Nazrath_Tvm",
+        "phone" : 8765432109
+}
+{
+        "_id" : ObjectId("65f9aa7698d125b21d130446"),
+        "name" : "Lena",
+        "age" : 30,
+        "gender" : "Female",
+        "experience" : "6 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Bariatric & Venous",
+        "Salary" : 20000,
+        "address" : "Lena_Tvm",
+        "phone" : 7612984536
+}
+{
+        "_id" : ObjectId("65f9aacb98d125b21d130447"),
+        "name" : "Sheethal",
+        "age" : 30,
+        "gender" : "Female",
+        "experience" : "6 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Nephrology",
+        "Salary" : 20000,
+        "address" : "Sheethal_Tvm",
+        "phone" : 7609832225
+}
+{
+        "_id" : ObjectId("65f9ab0f98d125b21d130448"),
+        "name" : "Greeshma",
+        "age" : 32,
+        "gender" : "Female",
+        "experience" : "8 years",
+        "shift" : "Night",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Gynecology",
+        "Salary" : 32000,
+        "address" : "Gokulam_Tvm",
+        "phone" : 8756443321
+}
+{
+        "_id" : ObjectId("65f9ab5498d125b21d130449"),
+        "name" : "Akhil",
+        "age" : 32,
+        "gender" : "Male",
+        "experience" : "8 years",
+        "shift" : "Night",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Dental",
+        "Salary" : 30000,
+        "address" : "Akhil_Tvm",
+        "phone" : 6676859932
+}
+{
+        "_id" : ObjectId("65f9ab9698d125b21d13044a"),
+        "name" : "Alan",
+        "age" : 33,
+        "gender" : "Male",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Neurology",
+        "Salary" : 33000,
+        "address" : "Alan_Tvm",
+        "phone" : 6654387123
+}
+{
+        "_id" : ObjectId("65f9abf898d125b21d13044b"),
+        "name" : "Aleena",
+        "age" : 31,
+        "gender" : "Female",
+        "experience" : "7 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Gastroenterology",
+        "Salary" : 30000,
+        "address" : "Aleena_Tvm",
+        "phone" : 8976345218
+}
+{
+        "_id" : ObjectId("65f9ac4398d125b21d13044c"),
+        "name" : "Smitha",
+        "age" : 32,
+        "gender" : "Female",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Respiratory_Medicine",
+        "Salary" : 31000,
+        "address" : "Shalom_Tvm",
+        "phone" : 6754398451
+}
+{
+        "_id" : ObjectId("65f9ac9198d125b21d13044d"),
+        "name" : "Sheena",
+        "age" : 34,
+        "gender" : "Female",
+        "experience" : "9 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Anaesthesiology",
+        "Salary" : 33000,
+        "address" : "Sheenavillage_Tvm",
+        "phone" : 9867542312
+}
+{
+        "_id" : ObjectId("65f9accd98d125b21d13044e"),
+        "name" : "Anu",
+        "age" : 30,
+        "gender" : "Female",
+        "experience" : "7 years",
+        "shift" : "Night",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Pulmunology",
+        "Salary" : 30000,
+        "address" : "Anu_Tvm",
+        "phone" : 8790653242
+}
+{
+        "_id" : ObjectId("65f9add098d125b21d13044f"),
+        "name" : "Ron",
+        "age" : 29,
+        "gender" : "Male",
+        "experience" : "6 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "ENT",
+        "Salary" : 25000,
+        "address" : "Ronvilla_Tvm",
+        "phone" : 9845326709
+}
+{
+        "_id" : ObjectId("65f9ae1a98d125b21d130450"),
+        "name" : "Roshni",
+        "age" : 31,
+        "gender" : "Female",
+        "experience" : "7 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Dermatology",
+        "Salary" : 29000,
+        "address" : "Rosevilla_Tvm",
+        "phone" : 7865342901
+}
+{
+        "_id" : ObjectId("65f9ae6a98d125b21d130451"),
+        "name" : "Rona",
+        "age" : 32,
+        "gender" : "Female",
+        "experience" : "7 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Paediatrics",
+        "Salary" : 30000,
+        "address" : "Ronavillage_Tvm",
+        "phone" : 9845633899
+}
+{
+        "_id" : ObjectId("65f9aeb298d125b21d130452"),
+        "name" : "Arjun",
+        "age" : 33,
+        "gender" : "Male",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Critical_Care",
+        "Salary" : 32000,
+        "address" : "Arjunbhavan_Tvm",
+        "phone" : 9645332822
+}
+{
+        "_id" : ObjectId("65f9aef998d125b21d130453"),
+        "name" : "Arun",
+        "age" : 33,
+        "gender" : "Male",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Diabetology",
+        "Salary" : 32000,
+        "address" : "Arunvilas_Tvm",
+        "phone" : 7544786632
+}
+{
+        "_id" : ObjectId("65f9af3a98d125b21d130454"),
+        "name" : "Aneesha",
+        "age" : 34,
+        "gender" : "Female",
+        "experience" : "9 years",
+        "shift" : "Night",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Surgery",
+        "Salary" : 33000,
+        "address" : "Aneesha_Tvm",
+        "phone" : 7786905534
+}
+{
+        "_id" : ObjectId("65f9af7398d125b21d130455"),
+        "name" : "Bincy",
+        "age" : 34,
+        "gender" : "Female",
+        "experience" : "9 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "DIP",
+        "Salary" : 33000,
+        "address" : "Bincycottage_Tvm",
+        "phone" : 9866574532
+}
+{
+        "_id" : ObjectId("65f9b11498d125b21d130456"),
+        "name" : "Farhana",
+        "age" : 33,
+        "gender" : "Female",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "Gynecology",
+        "Salary" : 33000,
+        "address" : "Sulekha_Tvm",
+        "phone" : 8976453392
+}
+{
+        "_id" : ObjectId("65f9b15e98d125b21d130457"),
+        "name" : "Pooja",
+        "age" : 32,
+        "gender" : "Female",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "General_Medicine",
+        "Salary" : 31000,
+        "address" : "Punyabhavan_Tvm",
+        "phone" : 9877675234
+}
+{
+        "_id" : ObjectId("65f9b19f98d125b21d130458"),
+        "name" : "Gouri",
+        "age" : 32,
+        "gender" : "Female",
+        "experience" : "8 years",
+        "shift" : "Day",
+        "education" : "Bachelor_of_Science_in_Nursing",
+        "department" : "General_Medicine",
+        "Salary" : 31000,
+        "address" : "Anandhabhavan_Tvm",
+        "phone" : 8977654432
+}
+> db.patient.find().pretty()
+{
+        "_id" : ObjectId("65f9930098d125b21d130431"),
+        "name" : "Rahul",
+        "age" : 22,
+        "gender" : "Male",
+        "admission_date" : "02-01-2024",
+        "room_number" : 18,
+        "consulting_doctor" : "Colin",
+        "condition" : "stable",
+        "diagnosis" : "fever",
+        "treatment" : "Antibiotics",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9942b98d125b21d130432"),
+        "name" : "Sona",
+        "age" : 35,
+        "gender" : "Female",
+        "admission_date" : "12-01-2024",
+        "room_number" : 15,
+        "consulting_doctor" : "Bindhu_Rajagopal & Thomas_K_John",
+        "condition" : "critical",
+        "diagnosis" : "kidney_stone",
+        "treatment" : "lithotripsy",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9951f98d125b21d130433"),
+        "name" : "Rohan",
+        "age" : 30,
+        "gender" : "Male",
+        "admission_date" : "24-01-2024",
+        "room_number" : 5,
+        "consulting_doctor" : "Anu_Antony_Varghese & Colin",
+        "condition" : "stable",
+        "diagnosis" : "Obesity",
+        "treatment" : "bariatric_surgery",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f995e798d125b21d130434"),
+        "name" : "Feba",
+        "age" : 38,
+        "gender" : "Female",
+        "admission_date" : "23-01-2024",
+        "room_number" : 9,
+        "consulting_doctor" : "Hanock_Unni_Samuel & Colin",
+        "condition" : "critical",
+        "diagnosis" : "kidney_failure",
+        "treatment" : "dialysis",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9972498d125b21d130435"),
+        "name" : "Reena",
+        "age" : 25,
+        "gender" : "Female",
+        "admission_date" : "28-01-2024",
+        "room_number" : 2,
+        "consulting_doctor" : "Marykuty",
+        "condition" : "stable",
+        "diagnosis" : "PCOS",
+        "treatment" : "Antibiotics",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f997b198d125b21d130436"),
+        "name" : "Anoop",
+        "age" : 30,
+        "gender" : "Male",
+        "admission_date" : "25-01-2024",
+        "room_number" : 12,
+        "consulting_doctor" : "Leji_Aprem",
+        "condition" : "stable",
+        "diagnosis" : "Dental_Fluorosis",
+        "treatment" : " dental_bonding",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9987698d125b21d130437"),
+        "name" : "Meena",
+        "age" : 45,
+        "gender" : "Female",
+        "admission_date" : "20-01-2024",
+        "room_number" : 10,
+        "consulting_doctor" : "Prem_Krishnan",
+        "condition" : "stable",
+        "diagnosis" : "Alzheimer's",
+        "treatment" : "Prescribed inhibitors",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9990e98d125b21d130438"),
+        "name" : "Mohan",
+        "age" : 48,
+        "gender" : "Male",
+        "admission_date" : "15-01-2024",
+        "room_number" : 7,
+        "consulting_doctor" : "Janet_Indu_Lily",
+        "condition" : "stable",
+        "diagnosis" : "Pancreatitis",
+        "treatment" : "fluid_resuscitation",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9998498d125b21d130439"),
+        "name" : "Binu",
+        "age" : 34,
+        "gender" : "Male",
+        "admission_date" : "17-01-2024",
+        "room_number" : 3,
+        "consulting_doctor" : "Jineesh_Joseph",
+        "condition" : "stable",
+        "diagnosis" : "asthma",
+        "treatment" : "Tablets & Inhaler",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f99a9598d125b21d13043a"),
+        "name" : "Vincy",
+        "age" : 39,
+        "gender" : "Female",
+        "admission_date" : "29-01-2024",
+        "room_number" : 13,
+        "consulting_doctor" : "Thomas_K_John",
+        "condition" : "stable",
+        "diagnosis" : "Pregnancy",
+        "treatment" : "Regional_Anesthecia",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f99b5698d125b21d13043b"),
+        "name" : "Sandra",
+        "age" : 30,
+        "gender" : "Female",
+        "admission_date" : "02-02-2024",
+        "room_number" : 14,
+        "consulting_doctor" : "Priya_Joy",
+        "condition" : "stable",
+        "diagnosis" : "pneumonia",
+        "treatment" : "Antibiotics",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f99bea98d125b21d13043c"),
+        "name" : "Kumar",
+        "age" : 50,
+        "gender" : "Male",
+        "admission_date" : "12-02-2024",
+        "room_number" : 16,
+        "consulting_doctor" : "Anbalagan & Colin",
+        "condition" : "critical",
+        "diagnosis" : "Hearing_loss.",
+        "treatment" : "surgery",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f99caa98d125b21d13043d"),
+        "name" : "Sneha",
+        "age" : 21,
+        "gender" : "Female",
+        "admission_date" : "15-02-2024",
+        "room_number" : 17,
+        "consulting_doctor" : "Sunena_Azeem",
+        "condition" : "stable",
+        "diagnosis" : "Bullous_Pemphigoid",
+        "treatment" : "systemic_corticosteroids",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f99d1b98d125b21d13043e"),
+        "name" : "Beena",
+        "age" : 42,
+        "gender" : "Female",
+        "admission_date" : "18-02-2024",
+        "room_number" : 19,
+        "consulting_doctor" : "Colin",
+        "condition" : "stable",
+        "diagnosis" : "diabetes",
+        "treatment" : "Insulin & other medicines",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f99da798d125b21d13043f"),
+        "name" : "Sera",
+        "age" : 5,
+        "gender" : "Female",
+        "admission_date" : "20-02-2024",
+        "room_number" : 1,
+        "consulting_doctor" : "Anju_Mary_Mathews",
+        "condition" : "stable",
+        "diagnosis" : "Fever",
+        "treatment" : "Antibiotics",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f99f7998d125b21d130440"),
+        "name" : "Pradeep",
+        "age" : 55,
+        "gender" : "Male",
+        "admission_date" : "25-02-2024",
+        "room_number" : 20,
+        "consulting_doctor" : "Thomas_K_John",
+        "condition" : "critical",
+        "diagnosis" : "Heart_Attack",
+        "treatment" : "Aspirin",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9a03098d125b21d130441"),
+        "name" : "Manu",
+        "age" : 42,
+        "gender" : "Male",
+        "admission_date" : "24-02-2024",
+        "room_number" : 11,
+        "consulting_doctor" : "Antony_Newton",
+        "condition" : "stable",
+        "diagnosis" : "pneumonia",
+        "treatment" : "Antibiotics",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9a0c898d125b21d130442"),
+        "name" : "Varsha",
+        "age" : 22,
+        "gender" : "Female",
+        "admission_date" : "27-02-2024",
+        "room_number" : 4,
+        "consulting_doctor" : "Marykuty",
+        "condition" : "stable",
+        "diagnosis" : "Postpartum_Hemorrhage",
+        "treatment" : "Manual removal of the placenta",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9a14298d125b21d130443"),
+        "name" : "Veena",
+        "age" : 32,
+        "gender" : "Female",
+        "admission_date" : "28-02-2024",
+        "room_number" : 6,
+        "consulting_doctor" : "Sunena_Azeem",
+        "condition" : "stable",
+        "diagnosis" : "syphilis",
+        "treatment" : "Benzathine_Penicillin",
+        "billing_status" : "paid"
+}
+{
+        "_id" : ObjectId("65f9a1ab98d125b21d130444"),
+        "name" : "Jyothi",
+        "age" : 20,
+        "gender" : "Female",
+        "admission_date" : "23-02-2024",
+        "room_number" : 8,
+        "consulting_doctor" : "Colin",
+        "condition" : "stable",
+        "diagnosis" : "Chickenpox",
+        "treatment" : "Antibiotics",
+        "billing_status" : "paid"
+}
+> db.surgeries.find().pretty()
+{
+        "_id" : ObjectId("65fff69592b6a620238390da"),
+        "patient_name" : "John",
+        "age" : 45,
+        "gender" : "Male",
+        "procedure" : "Appendectomy",
+        "surgeon" : "Dr Colin",
+        "date" : "09-01-2024",
+        "start_time" : "08:00 am",
+        "end_time" : "09:00 am",
+        "room" : "A 1",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fff74f92b6a620238390db"),
+        "patient_name" : "Jane",
+        "age" : 47,
+        "gender" : "Male",
+        "procedure" : "knee replacement",
+        "surgeon" : "Dr Johnson",
+        "date" : "19-01-2024",
+        "start_time" : "10:30 am",
+        "end_time" : "01:30 pm",
+        "room" : "A 2",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fff7ee92b6a620238390dc"),
+        "patient_name" : "Jeny",
+        "age" : 60,
+        "gender" : "Female",
+        "procedure" : "Cataract surgery",
+        "surgeon" : "Dr Lee",
+        "date" : "21-01-2024",
+        "start_time" : "09:00 am",
+        "end_time" : "11:00 am",
+        "room" : "A 3",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fff8cc92b6a620238390dd"),
+        "patient_name" : "Sarah",
+        "age" : 55,
+        "gender" : "Female",
+        "procedure" : "Gallbladder removal",
+        "surgeon" : "Dr Janet Indu Lily",
+        "date" : "22-01-2024",
+        "start_time" : "11:30 am",
+        "end_time" : "01:30 pm",
+        "room" : "A 4",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fff95092b6a620238390de"),
+        "patient_name" : "Michael",
+        "age" : 50,
+        "gender" : "Male",
+        "procedure" : "Heart Bypass surgery",
+        "surgeon" : "Dr John",
+        "date" : "23-01-2024",
+        "start_time" : "02:00 pm",
+        "end_time" : "05:00 pm",
+        "room" : "A 5",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fff9e792b6a620238390df"),
+        "patient_name" : "Emily",
+        "age" : 38,
+        "gender" : "Female",
+        "procedure" : "Hernia Repair",
+        "surgeon" : "Dr Hanock Unni Samuel",
+        "date" : "24-01-2024",
+        "start_time" : "03:00 pm",
+        "end_time" : "05:00 pm",
+        "room" : "A 6",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fffa3f92b6a620238390e0"),
+        "patient_name" : "Robert",
+        "age" : 70,
+        "gender" : "Male",
+        "procedure" : "Hip Replacement",
+        "surgeon" : "Dr Adam",
+        "date" : "25-01-2024",
+        "start_time" : "10:00 am",
+        "end_time" : "12:00 pm",
+        "room" : "A 7",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fffac192b6a620238390e1"),
+        "patient_name" : "Olivia",
+        "age" : 42,
+        "gender" : "Female",
+        "procedure" : "Spinal Fusion",
+        "surgeon" : "Dr Prem Krishnan",
+        "date" : "26-01-2024",
+        "start_time" : "11:00 am",
+        "end_time" : "01:00 pm",
+        "room" : "A 8",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fffb4992b6a620238390e2"),
+        "patient_name" : "Ethan",
+        "age" : 10,
+        "gender" : "Male",
+        "procedure" : "Tonsillectomy",
+        "surgeon" : "Dr Anbalagan",
+        "date" : "27-01-2024",
+        "start_time" : "12:30 pm",
+        "end_time" : "02:30 pm",
+        "room" : "A 9",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("65fffbaa92b6a620238390e3"),
+        "patient_name" : "Sophia",
+        "age" : 25,
+        "gender" : "Female",
+        "procedure" : "ACL Reconstruction",
+        "surgeon" : "Dr Hernandez",
+        "date" : "28-01-2024",
+        "start_time" : "05:30 pm",
+        "end_time" : "01:30 pm",
+        "room" : "A 10",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("6600198d92b6a620238390e4"),
+        "patient_name" : "Sanu",
+        "age" : 35,
+        "gender" : "Male",
+        "procedure" : "Appendectomy",
+        "surgeon" : "Dr Smith",
+        "date" : "29-01-2024",
+        "start_time" : "08:00 am",
+        "end_time" : "10:00 am",
+        "room" : "A 11",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("660019ec92b6a620238390e5"),
+        "patient_name" : "Lily",
+        "age" : 28,
+        "gender" : "Female",
+        "procedure" : "Knee Arthroscopy",
+        "surgeon" : "Dr Johnson",
+        "date" : "01-02-2024",
+        "start_time" : "09:30 am",
+        "end_time" : "11:30 am",
+        "room" : "A 12",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("66001a5392b6a620238390e6"),
+        "set$" : {
+                "patient_name" : "Veena"
+        }
+}
+{
+        "_id" : ObjectId("66001abe92b6a620238390e7"),
+        "patient_name" : "Varun",
+        "age" : 65,
+        "gender" : "Male",
+        "procedure" : "Prostatectomy",
+        "surgeon" : "Dr Alex",
+        "date" : "03-02-2024",
+        "start_time" : "01:30 pm",
+        "end_time" : "05:30 pm",
+        "room" : "A 14",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("66001b5292b6a620238390e8"),
+        "patient_name" : "Mia",
+        "age" : 40,
+        "gender" : "Female",
+        "procedure" : "Carpal Tunnel Release",
+        "surgeon" : "Dr Arun",
+        "date" : "04-02-2024",
+        "start_time" : "02:30 pm",
+        "end_time" : "04:30 pm",
+        "room" : "A 15",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("66001bb192b6a620238390e9"),
+        "patient_name" : "James",
+        "age" : 30,
+        "gender" : "Male",
+        "procedure" : "Rhinoplasty",
+        "surgeon" : "Dr Annie",
+        "date" : "05-02-2024",
+        "start_time" : "10:30 am",
+        "end_time" : "12:30 pm",
+        "room" : "A 16",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("66001c4492b6a620238390ea"),
+        "patient_name" : "Jeena",
+        "age" : 52,
+        "gender" : "Female",
+        "procedure" : "Mastectomy",
+        "surgeon" : "Dr Anna",
+        "date" : "06-02-2024",
+        "start_time" : "12:00 pm",
+        "end_time" : "02:00 pm",
+        "room" : "A 17",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("66001cc492b6a620238390eb"),
+        "patient_name" : "Jerry",
+        "age" : 55,
+        "gender" : "Male",
+        "procedure" : "Colonoscopy",
+        "surgeon" : "Dr Janet Indu Lily",
+        "date" : "07-02-2024",
+        "start_time" : "11:30 am",
+        "end_time" : "01:30 pm",
+        "room" : "A 18",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("66001d2592b6a620238390ec"),
+        "patient_name" : "Meena",
+        "age" : 45,
+        "gender" : "Female",
+        "procedure" : "Gastric Bypass Surgery",
+        "surgeon" : "Dr Janet Indu Lily",
+        "date" : "08-02-2024",
+        "start_time" : "01:00 pm",
+        "end_time" : "03:00 pm",
+        "room" : "A 19",
+        "status" : "completed"
+}
+{
+        "_id" : ObjectId("66001d7e92b6a620238390ed"),
+        "patient_name" : "Benjamin",
+        "age" : 35,
+        "gender" : "Male",
+        "procedure" : "LASIK Eye Surgery",
+        "surgeon" : "Dr Hernandez",
+        "date" : "09-02-2024",
+        "start_time" : "03:30 pm",
+        "end_time" : "05:30 pm",
+        "room" : "A 20",
+        "status" : "completed"
+}
